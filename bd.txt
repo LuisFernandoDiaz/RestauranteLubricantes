@@ -1,0 +1,99 @@
+CREATE DATABASE PolleriaLubricantes;
+GO
+
+USE PolleriaLubricantes;
+GO
+
+
+-- 1️⃣ Tabla Usuario (para autenticación)
+CREATE TABLE Usuario (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Nombres NVARCHAR(100) NOT NULL,
+    Correo NVARCHAR(100) NOT NULL UNIQUE,
+    Clave NVARCHAR(200) NOT NULL,
+    Rol NVARCHAR(50) NOT NULL DEFAULT 'Cliente',  -- Ej: Admin, Mesero, Cliente
+    FechaRegistro DATETIME DEFAULT GETDATE()
+);
+GO
+
+-- 2️⃣ Tabla Categoria (chifa, brasa, sopas, etc.)
+CREATE TABLE Categoria (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Descripcion NVARCHAR(250)
+);
+GO
+
+-- 3️⃣ Tabla Plato
+CREATE TABLE Plato (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(150) NOT NULL,
+    Precio DECIMAL(10,2) NOT NULL,
+    Origen NVARCHAR(100) NULL,      -- Ej: “China”, “Perú”, “Japón”
+    Descripcion NVARCHAR(300) NULL,
+    CategoriaId INT NOT NULL,
+    CONSTRAINT FK_Plato_Categoria FOREIGN KEY (CategoriaId)
+        REFERENCES Categoria(Id) ON DELETE CASCADE
+);
+GO
+
+-- 4️⃣ Tabla Pedido (relaciona usuario con sus pedidos)
+CREATE TABLE Pedido (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    UsuarioId INT NOT NULL,
+    FechaPedido DATETIME DEFAULT GETDATE(),
+    Total DECIMAL(10,2) DEFAULT 0,
+    Estado NVARCHAR(50) DEFAULT 'Pendiente',  -- Pendiente, Pagado, Entregado
+    CONSTRAINT FK_Pedido_Usuario FOREIGN KEY (UsuarioId)
+        REFERENCES Usuario(Id) ON DELETE CASCADE
+);
+GO
+
+-- 5️⃣ Tabla DetallePedido (platos por pedido)
+CREATE TABLE DetallePedido (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    PedidoId INT NOT NULL,
+    PlatoId INT NOT NULL,
+    Cantidad INT NOT NULL DEFAULT 1,
+    Subtotal DECIMAL(10,2) NOT NULL,
+    CONSTRAINT FK_DetallePedido_Pedido FOREIGN KEY (PedidoId)
+        REFERENCES Pedido(Id) ON DELETE CASCADE,
+    CONSTRAINT FK_DetallePedido_Plato FOREIGN KEY (PlatoId)
+        REFERENCES Plato(Id) ON DELETE CASCADE
+);
+GO
+
+
+-- 6.1 Insertar un usuario
+INSERT INTO Usuario (Nombres, Correo, Clave) 
+VALUES ('Luis Fernando', 'LuisFernando@gmail.com', '1234');
+
+
+-- 6️.2 Insertar categorías iniciales
+INSERT INTO Categoria (Nombre, Descripcion) VALUES
+('Brasas', 'Platos típicos a la brasa'),
+('Chifa', 'Comida oriental al estilo peruano'),
+('Sopas', 'Variedad de sopas calientes'),
+('Postres', 'Dulces y postres peruanos');
+GO
+
+-- 6.3 Insertar algunos platos de ejemplo
+INSERT INTO Plato (Nombre, Precio, Origen, Descripcion, CategoriaId)
+VALUES
+('Pollo a la Brasa', 25.00, 'Perú', 'Acompañado con papas fritas y ensalada', 1),
+('Arroz Chaufa', 18.50, 'China', 'Arroz frito con pollo y huevo', 2),
+('Sopa Wantán', 12.00, 'China', 'Caldo con wantanes rellenos', 3),
+('Mazamorra Morada', 8.00, 'Perú', 'Postre típico de maíz morado', 4);
+GO
+
+
+--consultas
+SELECT * FROM Usuario
+SELECT * FROM Categoria
+SELECT * FROM Plato
+
+
+
+--ejecutando los comandos del token
+select NEWID()
+select LEN('42B45D25-A115-4C1E-B0D7-C934B5A8E253')

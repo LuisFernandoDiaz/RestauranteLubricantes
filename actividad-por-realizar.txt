@@ -1,0 +1,17 @@
+--------- SQL SERVER ---------
+[x] Crear base de datos "DBPrueba"
+[x] Crear tabla Usuario y Notas
+[x] Insertar registros de pruebas
+
+------------ Visual Studio -----
+[x] Crear Proyecto "ASP.NET Core Web API" - WebAPI
+[x] Instalar Paquetes Nuget para EF y JWT
+[x] Configurar base de datos en carpeta Models
+[x] Configurar conexion DB y JWT en appsettings.json
+[x] Configurar DBContext y JWT en Program.cs
+[x] Crear encriptador SHA256 y JWT en Utilidades.cs - carpeta Custom
+[x] Configurar servicios BD, Utilidades y JWT en Program.cs
+[x] Crear clases DTO para login y usuario dentro de Models
+[x] Crear controlador(api) Acceso para registrar e iniciar sesion
+[x] Crear controlador(api) Notas y aplicar autenticacion
+[x] Activar Cors en program.cs
