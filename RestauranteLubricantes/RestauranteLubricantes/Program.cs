@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer; //Permite usar autenticación con JWT tokens.
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
 using Microsoft.IdentityModel.Tokens;//: Se usa para validar y manejar los tokens JWT.
-using System.Text; //Necesario para codificar la clave secreta (Encoding.UTF8).
-using RestauranteLubricantes.Models;
+using Microsoft.OpenApi.Models;
 using RestauranteLubricantes.Custom;
+using RestauranteLubricantes.Models;
+using RestauranteLubricantes.Service;
+using RestauranteLubricantes.Service.ServiceIMPL;
+using System.Text; //Necesario para codificar la clave secreta (Encoding.UTF8).
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,6 +41,15 @@ builder.Services.AddDbContext<PolleriaLubricantesContext>(options =>
 
 //agregamos esto    --- útil para clases de ayuda que no dependen del contexto o del usuario.
 builder.Services.AddSingleton<Utilidades>();
+
+
+
+
+
+// AGREGAMOS ESTO
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+
+
 
 //agregamos esto  
 builder.Services.AddAuthentication(config =>

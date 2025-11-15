@@ -165,3 +165,4 @@ C:\Users\Mayky\OneDrive\Escritorio\practicas_entrevista\practica_01\RestauranteL
 C:\Users\Mayky\OneDrive\Escritorio\practicas_entrevista\practica_01\RestauranteLubricantes\RestauranteLubricantes\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Mayky\OneDrive\Escritorio\practicas_entrevista\practica_01\RestauranteLubricantes\RestauranteLubricantes\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Mayky\OneDrive\Escritorio\practicas_entrevista\practica_01\RestauranteLubricantes\RestauranteLubricantes\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Mayky\OneDrive\Escritorio\practicas_entrevista\practica_01\RestauranteLubricantes\RestauranteLubricantes\obj\Debug\net9.0\RestauranteLubricantes.sourcelink.json

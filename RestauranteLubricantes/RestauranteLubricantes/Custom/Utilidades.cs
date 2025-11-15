@@ -68,10 +68,40 @@ namespace RestauranteLubricantes.Custom
 
             return new JwtSecurityTokenHandler().WriteToken(jwtConfig);
 
-
         }
 
 
+        //Validamos el tokens JWT para autenticar en el fornd Angular, de esa manera si hay un cambio del token (no borrado, solo cambio) este indicara que esta mal y te mostrara un falso, se dara uso para que en el front lo expulsen y redireccionen al login (modificacion parte Front)
+        public bool validarToken(string token)
+        {
+            var claimsPrincipal = new ClaimsPrincipal();//Aquí guardarías los datos del token si fueran válidos
+            var tokenHandler = new JwtSecurityTokenHandler();//Es el manejador oficial de JWT en .NET -Este objeto permite validar, crear y leer tokens.
+            var validationParameters = new TokenValidationParameters//Aquí defines las reglas que debe cumplir el token para ser válido.
+            {
+                ValidateIssuerSigningKey = true,//Verifica la firma del token con tu clave secreta
+                ValidateIssuer = false,  //: No se validan esos campos (opcional).
+                ValidateAudience = false,//: No se validan esos campos (opcional).
+                ValidateLifetime = true,//Rechaza tokens expirados.
+                ClockSkew = TimeSpan.Zero,//Evita tiempo de tolerancia para expiración.
+                IssuerSigningKey = new SymmetricSecurityKey
+                (Encoding.UTF8.GetBytes(_config["Jwt:Key"]!))//lee la clave del archivo appsettings y lo convierte a bytes
+            };
+
+            try
+            {
+                claimsPrincipal = tokenHandler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
+                return true;
+            }
+       //   catch (SecurityTokenExpiredException)
+       //    { return false; }
+       //     catch (SecurityTokenInvalidSignatureException)  //esto es opcional, para atrapar algunos erorres de mas
+       //    { return false; }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
 
 
     }

@@ -32,6 +32,54 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RestauranteLubricantes.Controllers.AccesoController",
+    "Method": "ValidarToken",
+    "RelativePath": "api/Acceso/ValidarToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteLubricantes.Controllers.CategoriaController",
+    "Method": "Buscar",
+    "RelativePath": "api/Categoria/Buscar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RestauranteLubricantes.Models.Dtos.BuscarCategoriaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteLubricantes.Controllers.CategoriaController",
+    "Method": "Crear",
+    "RelativePath": "api/Categoria/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RestauranteLubricantes.Models.Dtos.CrearCategoriaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RestauranteLubricantes.Controllers.CategoriaController",
     "Method": "Lista",
     "RelativePath": "api/Categoria/Lista",

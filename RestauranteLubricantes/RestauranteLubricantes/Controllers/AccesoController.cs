@@ -30,6 +30,20 @@ namespace RestauranteLubricantes.Controllers
         [Route("Registrarse")]
         public async Task<IActionResult> Registrarse(UsuarioDto objeto)
         {
+
+            var existeCorreo = await _dbPruebaContext.Usuarios
+                        .AnyAsync(u => u.Correo == objeto.Correo);
+
+            if (existeCorreo)
+            {
+                return BadRequest(new
+                {
+                    isSuccess = false,
+                    message = "El correo ya está registrado"
+                });
+            }
+
+
             var modeloUsuario = new Usuario
             {
                 Nombres = objeto.Nombres,
@@ -40,22 +54,15 @@ namespace RestauranteLubricantes.Controllers
             await _dbPruebaContext.Usuarios.AddAsync(modeloUsuario);//aqui se esta guardando
             await _dbPruebaContext.SaveChangesAsync();//aqui se esta guardando
 
-            if (modeloUsuario.Id != 0)
             {
                 return Ok(new
                 {
                     isSuccess = true,
-                    message = "Usuario registrado correctamente"
+                    message = "Usuario registrado correctamente",
+                    fecha = modeloUsuario.FechaRegistro
                 });
             }
-            else
-            {
-                return Unauthorized(new
-                {
-                    isSuccess = false,
-                    message = "Registro denegado"
-                });
-            }
+            
         }
 
 
@@ -78,18 +85,33 @@ namespace RestauranteLubricantes.Controllers
                 {
                     isSuccess = false,
                     token = "",
-                    message = "Usuario no autenticado"
+                    message = "Usuario no encontrado"
                 });
             }
             else//si encuentra devuelve el toque
             {
                 return  Ok(new
                 {
-                    isSuccess = false,
+                    isSuccess = true,
                     token = _utilidades.generarJWT(usuarioEncontrado),
-                    message = "Usuario autenticado correctamente"
+                    message = "Usuario autenticado correctamente",
+                    registro = usuarioEncontrado.FechaRegistro
                 });
             }
         }
+
+
+
+        //esto es para validar el token
+        [HttpGet]
+        [Route("ValidarToken")]
+        public IActionResult ValidarToken([FromQuery] string token)
+        {
+            bool resultado = _utilidades.validarToken(token);
+            return StatusCode(StatusCodes.Status200OK, new { isSuccess = resultado });
+        }
+
+
+
     }
 }
