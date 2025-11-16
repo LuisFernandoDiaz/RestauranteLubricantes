@@ -48,7 +48,7 @@ namespace RestauranteLubricantes.Controllers
             {
                 Nombres = objeto.Nombres,
                 Correo = objeto.Correo,
-                Clave = _utilidades.encriptarSHA256(objeto.Clave) //recordemos que la clave fue encriptada
+                Clave = _utilidades.encriptarSHA256(objeto.Clave) //recordar que la clave fue encriptada
             };
 
             await _dbPruebaContext.Usuarios.AddAsync(modeloUsuario);//aqui se esta guardando
@@ -72,7 +72,7 @@ namespace RestauranteLubricantes.Controllers
         [Route("Login")]
         public async Task<IActionResult> Login(LoginDto objeto)
         {
-            //aqui estamos validando que lo inseertado sea igual clave y correo que previamente fueron registrados en la BD
+            //aqui estamos validando que lo insertado  sea igual clave y correo que previamente fueron registrados en la BD
             var usuarioEncontrado = await _dbPruebaContext.Usuarios
                                        .Where(u =>
                                        u.Correo == objeto.Correo &&

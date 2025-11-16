@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DA1265FD-1685-411B-AD77-53375FECD801}|RestauranteLubricantes\\RestauranteLubricantes.csproj|c:\\users\\mayky\\onedrive\\escritorio\\practicas_entrevista\\practica_01\\restaurantelubricantes\\restaurantelubricantes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA1265FD-1685-411B-AD77-53375FECD801}|RestauranteLubricantes\\RestauranteLubricantes.csproj|solutionrelative:restaurantelubricantes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA1265FD-1685-411B-AD77-53375FECD801}|RestauranteLubricantes\\RestauranteLubricantes.csproj|c:\\users\\mayky\\onedrive\\escritorio\\practicas_entrevista\\practica_01\\restaurantelubricantes\\restaurantelubricantes\\controllers\\accesocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA1265FD-1685-411B-AD77-53375FECD801}|RestauranteLubricantes\\RestauranteLubricantes.csproj|solutionrelative:restaurantelubricantes\\controllers\\accesocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA1265FD-1685-411B-AD77-53375FECD801}|RestauranteLubricantes\\RestauranteLubricantes.csproj|c:\\users\\mayky\\onedrive\\escritorio\\practicas_entrevista\\practica_01\\restaurantelubricantes\\restaurantelubricantes\\custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA1265FD-1685-411B-AD77-53375FECD801}|RestauranteLubricantes\\RestauranteLubricantes.csproj|solutionrelative:restaurantelubricantes\\custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA1265FD-1685-411B-AD77-53375FECD801}|RestauranteLubricantes\\RestauranteLubricantes.csproj|c:\\users\\mayky\\onedrive\\escritorio\\practicas_entrevista\\practica_01\\restaurantelubricantes\\restaurantelubricantes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA1265FD-1685-411B-AD77-53375FECD801}|RestauranteLubricantes\\RestauranteLubricantes.csproj|solutionrelative:restaurantelubricantes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA1265FD-1685-411B-AD77-53375FECD801}|RestauranteLubricantes\\RestauranteLubricantes.csproj|c:\\users\\mayky\\onedrive\\escritorio\\practicas_entrevista\\practica_01\\restaurantelubricantes\\restaurantelubricantes\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "BuscarCategoriaDto.cs",
               "DocumentMoniker": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Models\\Dtos\\BuscarCategoriaDto.cs",
               "RelativeDocumentMoniker": "RestauranteLubricantes\\Models\\Dtos\\BuscarCategoriaDto.cs",
@@ -102,12 +102,11 @@
               "RelativeToolTip": "RestauranteLubricantes\\Models\\Dtos\\BuscarCategoriaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T00:03:47.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T00:03:47.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CrearCategoriaDto.cs",
               "DocumentMoniker": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Models\\Dtos\\CrearCategoriaDto.cs",
               "RelativeDocumentMoniker": "RestauranteLubricantes\\Models\\Dtos\\CrearCategoriaDto.cs",
@@ -115,12 +114,11 @@
               "RelativeToolTip": "RestauranteLubricantes\\Models\\Dtos\\CrearCategoriaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T21:50:39.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T21:50:39.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CategoriaDto.cs",
               "DocumentMoniker": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Models\\Dtos\\CategoriaDto.cs",
               "RelativeDocumentMoniker": "RestauranteLubricantes\\Models\\Dtos\\CategoriaDto.cs",
@@ -128,12 +126,11 @@
               "RelativeToolTip": "RestauranteLubricantes\\Models\\Dtos\\CategoriaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T21:46:31.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T21:46:31.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CategoriaService.cs",
               "DocumentMoniker": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Service\\ServiceIMPL\\CategoriaService.cs",
               "RelativeDocumentMoniker": "RestauranteLubricantes\\Service\\ServiceIMPL\\CategoriaService.cs",
@@ -141,12 +138,11 @@
               "RelativeToolTip": "RestauranteLubricantes\\Service\\ServiceIMPL\\CategoriaService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAswCoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T21:40:23.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T21:40:23.329Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ICategoriaService.cs",
               "DocumentMoniker": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Service\\ICategoriaService.cs",
               "RelativeDocumentMoniker": "RestauranteLubricantes\\Service\\ICategoriaService.cs",
@@ -154,8 +150,7 @@
               "RelativeToolTip": "RestauranteLubricantes\\Service\\ICategoriaService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T21:38:39.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T21:38:39.874Z"
             },
             {
               "$type": "Document",
@@ -167,8 +162,7 @@
               "RelativeToolTip": "RestauranteLubricantes\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-13T05:29:34.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T05:29:34.639Z"
             },
             {
               "$type": "Document",
@@ -180,18 +174,17 @@
               "RelativeToolTip": "RestauranteLubricantes\\Controllers\\CategoriaController.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAQwG8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T05:12:27.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T05:12:27.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AccesoController.cs",
               "DocumentMoniker": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Controllers\\AccesoController.cs",
               "RelativeDocumentMoniker": "RestauranteLubricantes\\Controllers\\AccesoController.cs",
               "ToolTip": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Controllers\\AccesoController.cs",
               "RelativeToolTip": "RestauranteLubricantes\\Controllers\\AccesoController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAgwF8AAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-13T04:43:27.965Z",
               "EditorCaption": ""
@@ -206,8 +199,7 @@
               "RelativeToolTip": "RestauranteLubricantes\\Models\\Dtos\\UsuarioDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T04:39:20.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T04:39:20.908Z"
             },
             {
               "$type": "Document",
@@ -219,12 +211,11 @@
               "RelativeToolTip": "RestauranteLubricantes\\Models\\Dtos\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T04:39:06.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T04:39:06.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Utilidades.cs",
               "DocumentMoniker": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Custom\\Utilidades.cs",
               "RelativeDocumentMoniker": "RestauranteLubricantes\\Custom\\Utilidades.cs",
@@ -232,8 +223,7 @@
               "RelativeToolTip": "RestauranteLubricantes\\Custom\\Utilidades.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAgwEkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T21:30:45.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T21:30:45.734Z"
             },
             {
               "$type": "Document",
@@ -257,8 +247,7 @@
               "RelativeToolTip": "RestauranteLubricantes\\Models\\Categorium.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T21:19:22.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T21:19:22.099Z"
             },
             {
               "$type": "Document",
@@ -294,8 +283,7 @@
               "RelativeToolTip": "RestauranteLubricantes\\Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T21:18:04.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T21:18:04.726Z"
             },
             {
               "$type": "Document",
@@ -307,8 +295,7 @@
               "RelativeToolTip": "RestauranteLubricantes\\Models\\PolleriaLubricantesContext.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAqwBsAAACXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T21:17:29.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T21:17:29.736Z"
             },
             {
               "$type": "Document",
@@ -324,13 +311,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Program.cs",
               "RelativeDocumentMoniker": "RestauranteLubricantes\\Program.cs",
               "ToolTip": "C:\\Users\\Mayky\\OneDrive\\Escritorio\\practicas_entrevista\\practica_01\\RestauranteLubricantes\\RestauranteLubricantes\\Program.cs",
               "RelativeToolTip": "RestauranteLubricantes\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T21:11:47.037Z",
               "EditorCaption": ""

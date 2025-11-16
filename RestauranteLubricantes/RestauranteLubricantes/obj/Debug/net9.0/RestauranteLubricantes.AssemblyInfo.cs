@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestauranteLubricantes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+846faffa2685a5b3566dd2bff1efbde3ad6259f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ec017eb0dc04f57c719264b8eecdb39f9b21a88")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestauranteLubricantes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestauranteLubricantes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

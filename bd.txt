@@ -87,13 +87,15 @@ VALUES
 GO
 
 
+
 --consultas
 SELECT * FROM Usuario
 SELECT * FROM Categoria
 SELECT * FROM Plato
 
+    DELETE FROM Usuario WHERE Id = 6;
 
 
 --ejecutando los comandos del token
 select NEWID()
-select LEN('42B45D25-A115-4C1E-B0D7-C934B5A8E253')
+select LEN('829BCCDC-3FE7-4ADA-808B-7DDD0FC19BA8')

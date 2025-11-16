@@ -3,8 +3,7 @@ pude usar scaffold y esto permite conectar bd y .net
 con ello pude crear las tablas en las clases de una manera mas rapida.
 a continuacion la linea que requeri aplicar en la terminal.
 
-Scaffold-DbContext "Data Source=DESKTOP-QSHGEPG;Initial Catalog=PolleriaLubricantes;User ID=root;Password=root;TrustServerCertificate=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
-
+Scaffold-DbContext "Server=DESKTOP-QSHGEPG;Database=PolleriaLubricantes;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 
 
